@@ -2,33 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Neither Smoke</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Her Coffee</title>
   <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #111;
-      color: #f5f5f5;
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
       font-family: Arial, sans-serif;
-      text-align: center;
+      background: radial-gradient(circle at top, #3b2a23, #120c0a);
+      color:#f7f2ee;
+      text-align:center;
+      padding:24px;
     }
-    h1 {
+    .card{
+      max-width:720px;
+      width:100%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      padding: 34px 26px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+      backdrop-filter: blur(6px);
+    }
+    .badge{
+      display:inline-block;
+      padding:6px 12px;
+      border-radius:999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      font-size: 0.9rem;
+      letter-spacing: 0.3px;
+      margin-bottom: 14px;
+    }
+    h1{
+      margin: 10px 0 6px;
       font-size: 3rem;
-      margin-bottom: 0.5rem;
+      line-height: 1.05;
     }
-    p {
-      font-size: 1.2rem;
-      opacity: 0.8;
+    .tagline{
+      margin: 0 0 20px;
+      font-size: 1.15rem;
+      opacity: 0.9;
+    }
+    .info{
+      margin: 18px auto 0;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    .pill{
+      padding:10px 14px;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.22);
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.98rem;
+    }
+    .cta{
+      margin-top: 22px;
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    a.btn{
+      display:inline-block;
+      padding: 12px 16px;
+      border-radius: 12px;
+      text-decoration:none;
+      color:#120c0a;
+      background:#f2d3a4;
+      font-weight:700;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    a.btn.secondary{
+      background: transparent;
+      color:#f7f2ee;
+      border: 1px solid rgba(255,255,255,0.22);
+    }
+    footer{
+      margin-top: 18px;
+      font-size: 0.9rem;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
-  <div>
-    <h1>Neither Smoke</h1>
-    <p>Sample cover page for testing</p>
-  </div>
+  <main class="card">
+    <div class="badge">☕ Fresh coffee • Coming soon</div>
+    <h1>Her Coffee</h1>
+    <p class="tagline">Handcrafted coffee, made with love.</p>
+
+    <div class="info">
+      <div class="pill">📍 City: <strong>Visalia, CA</strong></div>
+      <div class="pill">🕒 Hours: <strong>Weekends</strong></div>
+      <div class="pill">✨ Specialty: <strong>Cold brew • Lattes</strong></div>
+    </div>
+
+    <div class="cta">
+      <!-- Replace # with real links -->
+      <a class="btn" href="#" target="_blank" rel="noopener">Order / DM on Instagram</a>
+      <a class="btn secondary" href="mailto:hello@your-email.com">Email</a>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Her Coffee • Follow for updates
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
