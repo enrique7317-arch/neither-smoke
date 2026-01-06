@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="./styles.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Her Coffee</title>
+  <title>Rise &amp; Grind</title>
+
   <style>
     body{
       margin:0;
       min-height:100vh;
       display:flex;
+      flex-direction: column;
       align-items:center;
       justify-content:center;
       font-family: Arial, sans-serif;
@@ -16,7 +19,30 @@
       color:#f7f2ee;
       text-align:center;
       padding:24px;
+      position: relative;
     }
+
+    /* Navigation */
+    nav{
+      position:absolute;
+      top:20px;
+      display:flex;
+      gap:18px;
+    }
+
+    nav a{
+      color:#f7f2ee;
+      text-decoration:none;
+      font-weight:600;
+      opacity:0.85;
+    }
+
+    nav a:hover{
+      opacity:1;
+      text-decoration:underline;
+    }
+
+    /* Card */
     .card{
       max-width:720px;
       width:100%;
@@ -27,6 +53,7 @@
       box-shadow: 0 16px 40px rgba(0,0,0,0.45);
       backdrop-filter: blur(6px);
     }
+
     .badge{
       display:inline-block;
       padding:6px 12px;
@@ -37,16 +64,19 @@
       letter-spacing: 0.3px;
       margin-bottom: 14px;
     }
+
     h1{
       margin: 10px 0 6px;
       font-size: 3rem;
       line-height: 1.05;
     }
+
     .tagline{
       margin: 0 0 20px;
       font-size: 1.15rem;
       opacity: 0.9;
     }
+
     .info{
       margin: 18px auto 0;
       display:flex;
@@ -54,6 +84,7 @@
       flex-wrap:wrap;
       justify-content:center;
     }
+
     .pill{
       padding:10px 14px;
       border-radius: 999px;
@@ -61,6 +92,7 @@
       border: 1px solid rgba(255,255,255,0.12);
       font-size: 0.98rem;
     }
+
     .cta{
       margin-top: 22px;
       display:flex;
@@ -68,6 +100,7 @@
       justify-content:center;
       flex-wrap:wrap;
     }
+
     a.btn{
       display:inline-block;
       padding: 12px 16px;
@@ -78,11 +111,13 @@
       font-weight:700;
       border: 1px solid rgba(255,255,255,0.2);
     }
+
     a.btn.secondary{
       background: transparent;
       color:#f7f2ee;
       border: 1px solid rgba(255,255,255,0.22);
     }
+
     footer{
       margin-top: 18px;
       font-size: 0.9rem;
@@ -90,10 +125,22 @@
     }
   </style>
 </head>
+
 <body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./menu.html">Menu</a>
+    <a href="./about.html">About</a>
+    <a href="./contact.html">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
   <main class="card">
     <div class="badge">☕ Fresh coffee • Coming soon</div>
-    <h1>Her Coffee</h1>
+
+    <h1>Rise &amp; Grind</h1>
     <p class="tagline">Handcrafted coffee, made with love.</p>
 
     <div class="info">
@@ -103,18 +150,22 @@
     </div>
 
     <div class="cta">
-      <!-- Replace # with real links -->
-      <a class="btn" href="#" target="_blank" rel="noopener">Order / DM on Instagram</a>
-      <a class="btn secondary" href="mailto:hello@your-email.com">Email</a>
+      <a class="btn" href="#" target="_blank" rel="noopener">
+        Order / DM on Instagram
+      </a>
+      <a class="btn secondary" href="mailto:hello@your-email.com">
+        Email
+      </a>
     </div>
 
     <footer>
-      © <span id="year"></span> Her Coffee • Follow for updates
+      © <span id="year"></span> Rise &amp; Grind • Follow for updates
     </footer>
   </main>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>

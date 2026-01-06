@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • Rise & Grind</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./menu.html">Menu</a>
+    <a href="./about.html" aria-current="page">About</a>
+    <a href="./contact.html">Contact</a>
+  </nav>
+
+  <main class="card">
+    <h1>About Rise & Grind</h1>
+
+    <p class="tagline">
+      Rise & Grind is a weekend pop-up coffee concept built on quality,
+      community, and great vibes.
+    </p>
+
+    <p>
+      Every cup is handcrafted using carefully selected beans and served
+      with intention. We believe good coffee brings people together.
+    </p>
+
+    <footer>
+      © <span id="year"></span> Rise & Grind
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

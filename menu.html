@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu • Rise & Grind</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./menu.html" aria-current="page">Menu</a>
+    <a href="./about.html">About</a>
+    <a href="./contact.html">Contact</a>
+  </nav>
+
+  <main class="card">
+    <h1>Our Menu</h1>
+    <p class="tagline">Simple. Fresh. Crafted.</p>
+
+    <section class="info">
+      <div class="pill">☕ Cold Brew</div>
+      <div class="pill">🥛 Lattes</div>
+      <div class="pill">🍯 Vanilla • Caramel • Mocha</div>
+      <div class="pill">🧊 Iced & Hot</div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Rise & Grind
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

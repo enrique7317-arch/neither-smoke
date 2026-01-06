@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • Rise & Grind</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./menu.html">Menu</a>
+    <a href="./about.html">About</a>
+    <a href="./contact.html" aria-current="page">Contact</a>
+  </nav>
+
+  <main class="card">
+    <h1>Contact Us</h1>
+    <p class="tagline">We’d love to hear from you!</p>
+
+    <div class="info">
+      <div class="pill">📍 Visalia, CA</div>
+      <div class="pill">
+        📧 <a href="mailto:hello@your-email.com">your-email.com</a>
+      </div>
+      <div class="pill">
+        📸 <a href="https://instagram.com/YOUR_HANDLE" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Rise & Grind
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
